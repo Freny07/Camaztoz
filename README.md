@@ -1,6 +1,7 @@
 # Camazotz -- Design Documentation Template
 
-Team Name: Error 404  
+Team Name: # Error 404 
+
 Team Members: 
 1. Freny Kansagra
 2. Damarla Rohit Phani Datta
