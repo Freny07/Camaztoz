@@ -1,4 +1,4 @@
-# Camazotz -- Design Documentation Template
+# Camazotz -- Design Documentation 
 
 Team Name: Error 404 
 
