@@ -2,7 +2,8 @@
 
 Team Name: Error 404 
 
-Team Members: 1. Freny Kansagra
+Team Members: 
+1. Freny Kansagra
 2. Damarla Rohit Phani Datta
 3. Nayan Gupta
 4. Prabal Verma
