@@ -191,8 +191,135 @@ Why this was done:
 Expected User Difficulty: 
 > Users may get distracted, try irrelevant actions, or take longer to complete tasks.
 
+### Issue 14
 
+Type:  Layout / Visual Hierarchy
 
+What was done:
+> Some UI elements are not properly aligned and appear rotated or tilted instead of following a structured layout.
+
+Why this was done:
+> To observe how users interact with interfaces that do not follow standard alignment patterns.
+
+Expected User Difficulty:
+> Users may find it difficult to read or interact with elements accurately.
+
+### Issue 15
+
+Type: Layout / Visibility
+
+What was done:
+> Certain UI components overlap with each other.
+
+Why this was done:
+> To test how users handle cluttered layouts with limited spacing.
+
+Expected User Difficulty:
+> Users may miss important elements or interact with the wrong component.
+
+### Issue 16
+
+Type: Visual Design / Accessibility
+
+What was done:
+> A visually heavy and distracting background is used behind important content.
+
+Why this was done:
+> To evaluate how background complexity affects user focus and readability.
+
+Expected User Difficulty:
+> Users may struggle to focus on key actions or read content clearly.
+
+### Issue 17
+
+Type: Visual Design / Accessibility
+
+What was done:
+> Color combinations used for buttons and text are inconsistent and not optimized for readability.
+
+Why this was done:
+> To explore how users respond to visually intense or inconsistent color schemes.
+
+Expected User Difficulty:
+> Users may find it hard to distinguish actions or read text clearly.
+
+### Issue 18
+
+Type: Layout / Consistency
+
+What was done:
+> UI elements are placed without a consistent alignment or structure across different screens.
+
+Why this was done:
+> To test how users navigate interfaces without predictable layouts.
+
+Expected User Difficulty:
+> Users may take longer to locate elements or feel disoriented.
+
+### Issue 19
+
+Type: Interaction / Accessibility
+
+What was done:
+> Interactive elements are placed very close to each other with minimal spacing.
+
+Why this was done:
+> To observe how users interact when touch targets are not well separated.
+
+Expected User Difficulty:
+> Users may accidentally select unintended options.
+
+### Issue 20
+
+Type: Feedback / Interaction
+
+What was done:
+> Some actions do not provide clear or immediate feedback after interaction.
+
+Why this was done:
+> To test how users interpret system responses when feedback is minimal.
+
+Expected User Difficulty:
+> Users may not be sure whether their action was successful.
+
+### Issue 21
+
+Type: Navigation / Flow
+
+What was done:
+> Certain actions reload the same screen instead of transitioning to a new one.
+
+Why this was done:
+> To observe how users react when navigation does not lead to new content.
+
+Expected User Difficulty:
+> Users may feel stuck and repeat the same actions.
+
+### Issue 22
+
+Type: Logic / Consistency
+
+What was done:
+> The starting player in the game is not fixed and may vary between sessions.
+
+Why this was done:
+> To explore how users adapt to changing initial conditions.
+
+Expected User Difficulty:
+> Users may not clearly understand turn order at the beginning.
+
+### Issue 23
+
+Type: Layout / Interaction
+
+What was done:
+> Important elements are placed within scrollable areas and may not be visible initially.
+
+Why this was done:
+> To observe how users explore vertically extended layouts.
+
+Expected User Difficulty:
+> Users may miss important actions located outside the initial view.
 
 # Functional Bugs / Issues 
 
@@ -256,44 +383,62 @@ Bug 12:
 - Impact: Confuses users and interrupts flow
 - Workaround: Ignore non-responsive buttons
 
+Bug 13:
+- Description: Some UI elements appear rotated or misaligned
+- Impact: Reduces readability and interaction clarity
+- Workaround: Adjust viewing and interact carefully
+
+Bug 14:
+- Description: UI components overlap in certain screens
+- Impact: Blocks visibility and interaction
+- Workaround: Try tapping around visible areas
+
+Bug 15:
+- Description: Background reduces clarity of foreground content
+- Impact: Makes text harder to read
+- Workaround: Focus carefully on content
+
+Bug 16:
+- Description: Buttons placed very close may lead to accidental taps
+- Impact: Incorrect actions triggered
+- Workaround: Careful tapping
+
+Bug 17:
+- Description: Some actions do not provide clear feedback
+- Impact: Creates uncertainty in interaction
+- Workaround: Repeat action or observe changes
+
+Bug 18:
+- Description: Some actions restart the same screen instead of progressing
+- Impact: Prevents forward navigation
+- Workaround: Try alternative actions
+
+Bug 19:
+- Description: Starting player varies between sessions
+- Impact: Reduces predictability
+- Workaround: Observe first move
+
+
 # Design Anti-Patterns Used
 
-Hidden / Low Discoverability Actions
-→ Important actions are not easily visible
-
-Ambiguous CTAs
-→ Multiple buttons appear similar but behave differently
-
-Poor Visual Hierarchy
-→ No clear distinction between primary and secondary actions
-
-Confusing Navigation
-→ Loops and unclear transitions between screens
-
-Fragmented User Flow
-→ Inputs and steps split across multiple pages
-
-Inconsistent Interaction Patterns
-→ Similar actions behave differently
-
-Unclear Semantics
-→ Placeholder text and labels are not easily understandable
-
-Misleading Feedback
-→ Messages and results do not match actual system state
-
-Broken System Feedback
-→ Users cannot rely on visual/game indicators
-
-Cognitive Overload
-→ Multiple steps, unclear inputs, and repeated screens increase effort
-
-Lack of Input Validation
-→ Fields allow unrestricted input
-
-Irrelevant / Redundant Actions
-→ Extra buttons increase confusion
-- Confusing navigation  
-- Cognitive overload  
-- Inconsistent components
-- Unnecessary buttons
+Hidden / Low Discoverability Actions → Important actions are not easily visible
+Ambiguous CTAs → Multiple buttons appear similar but behave differently
+Poor Visual Hierarchy → No clear distinction between primary and secondary actions
+Confusing Navigation → Loops and unclear transitions between screens
+Fragmented User Flow → Inputs and steps split across multiple pages
+Inconsistent Interaction Patterns → Similar actions behave differently
+Unclear Semantics → Placeholder text and labels are not easily understandable
+Misleading Feedback → Messages and results do not match actual system state
+Broken System Feedback → Users cannot rely on visual/game indicators
+Cognitive Overload → Multiple steps, unclear inputs, and repeated screens increase effort
+Lack of Input Validation → Fields allow unrestricted input
+Irrelevant / Redundant Actions → Extra buttons increase confusion
+Poor Layout Alignment → Elements are rotated or not properly structured
+Overlapping Components → UI elements interfere with each other
+Low Readability Design → Background and colors reduce clarity
+Lack of Structured Layout → No consistent alignment or grid system
+Poor Touch Target Design → Buttons are too close to each other
+Lack of System Feedback → Actions do not clearly confirm results
+Loop / Dead-End Navigation → Actions do not lead to new states
+Inconsistent Initial State → Game does not start predictably
+Multiple Competing CTAs → Several actions are presented together without clear priority
