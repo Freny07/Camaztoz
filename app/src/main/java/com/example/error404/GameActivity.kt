@@ -38,15 +38,15 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun setUI() {
         gameModel?.apply {
-            binding.btn0.text = filledPos[0]
-            binding.btn1.text = filledPos[1]
-            binding.btn2.text = filledPos[2]
-            binding.btn3.text = filledPos[3]
-            binding.btn4.text = filledPos[4]
-            binding.btn5.text = filledPos[5]
-            binding.btn6.text = filledPos[6]
-            binding.btn7.text = filledPos[7]
-            binding.btn8.text = filledPos[8]
+            binding.btn0.text = filledPos[1]
+            binding.btn1.text = filledPos[4]
+            binding.btn2.text = filledPos[3]
+            binding.btn3.text = filledPos[2]
+            binding.btn4.text = filledPos[7]
+            binding.btn5.text = filledPos[8]
+            binding.btn6.text = filledPos[0]
+            binding.btn7.text = filledPos[5]
+            binding.btn8.text = filledPos[6]
 
             binding.startGameBtn.visibility = View.VISIBLE
 
@@ -55,13 +55,13 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
                     binding.startGameBtn.visibility = View.INVISIBLE
                     "Game ID: $gameId"
                 }
-                GameStatus.JOINED -> "Click Start Game"
+                GameStatus.JOINED -> "Click Hakunka Matata Game"
                 GameStatus.INPROGRESS -> {
                     binding.startGameBtn.visibility = View.INVISIBLE
-                    "Turn: $currentPlayer"
+                    "Past Turn: $currentPlayer"
                 }
                 GameStatus.FINISHED -> {
-                    if (winner.isNotEmpty()) "$winner Won!" else "Draw"
+                    if (winner.isNotEmpty()) "$winner LOST!" else "Happy Birthday!!"
                 }
             }
         }
@@ -81,14 +81,14 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         gameModel?.apply {
             if (gameStatus != GameStatus.INPROGRESS) {
-                Toast.makeText(applicationContext, "Game not started", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "There is no game", Toast.LENGTH_SHORT).show()
                 return
             }
 
             val clickedPos = (v?.tag as String).toInt()
             if (filledPos[clickedPos].isEmpty()) {
                 filledPos[clickedPos] = currentPlayer
-                currentPlayer = if (currentPlayer == "X") "O" else "X"
+                currentPlayer = if (currentPlayer == "X") "X" else "O"
                 checkForWinner()
                 updateGameData(this)
             }
