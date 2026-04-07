@@ -70,7 +70,8 @@
                 android:textSize="29sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/profileImage" />
+                app:layout_constraintTop_toBottomOf="@id/profileImage"
+                tools:ignore="NotSibling" />
 
             <EditText
                 android:id="@+id/etName"
@@ -175,7 +176,7 @@
             android:textColor="@android:color/black"
             android:textSize="25sp"
             app:layout_constraintTop_toBottomOf="@+id/cl_profile_card_container"
-            tools:ignore="HardcodedText,VisualLintButtonSize"
+            tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize"
             tools:layout_editor_absoluteX="200dp" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -189,10 +190,10 @@
             android:text="Confirm"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textColor="@android:color/black"
+            android:textColor="#4DB6AC"
             android:textSize="25sp"
             app:layout_constraintTop_toBottomOf="@+id/cl_profile_card_container"
-            tools:ignore="HardcodedText,VisualLintButtonSize"
+            tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize"
             tools:layout_editor_absoluteX="78dp" />
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -202,6 +203,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/img"
             tools:layout_editor_absoluteX="311dp"
-            tools:layout_editor_absoluteY="68dp" />
+            tools:layout_editor_absoluteY="68dp"
+            tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
