@@ -28,8 +28,8 @@
 
         <TextView
             android:id="@+id/tv_subtitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="88dp"
+            android:layout_height="2dp"
             android:layout_marginTop="10dp"
             android:background="@color/black"
             android:paddingBottom="20dp"
@@ -46,6 +46,7 @@
             android:layout_height="464dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="4dp"
+            android:rotation="39047"
             android:layout_marginEnd="24dp"
             android:background="@color/grey"
             android:paddingHorizontal="20dp"
@@ -65,12 +66,13 @@
                 android:layout_marginTop="24dp"
                 android:drawablePadding="10dp"
                 android:padding="5dp"
-                android:text="Contact No."
+                android:text="Saaffiginnittarfik nr."
                 android:textColor="@color/black"
                 android:textSize="29sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/profileImage" />
+                app:layout_constraintTop_toBottomOf="@id/profileImage"
+                tools:ignore="NotSibling" />
 
             <EditText
                 android:id="@+id/etName"
@@ -78,8 +80,9 @@
                 android:layout_height="56dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg"
-                android:hint="enter your contact number     +91"
+                android:hint="sonot krus re"
                 android:inputType="phone"
+                android:rotation=""
                 android:paddingHorizontal="16dp"
                 android:textColor="@color/red"
                 android:textColorHint="@color/black"
@@ -94,7 +97,8 @@
                 android:layout_marginTop="16dp"
                 android:drawablePadding="10dp"
                 android:padding="5dp"
-                android:text="Name"
+                android:text="kontakto numero"
+                android:rotation="39"
                 android:textColor="@color/black"
                 android:textSize="20dp"
                 android:textStyle="bold"
@@ -108,8 +112,9 @@
                 android:layout_height="56dp"
                 android:layout_marginTop="8dp"
                 android:autofillHints="no"
+                android:rotation="79"
                 android:background="@drawable/bg"
-                android:hint="enter your full name"
+                android:hint="введите свое полное имя"
                 android:inputType="textAutoCorrect"
                 android:padding="18dp"
                 android:paddingHorizontal="16dp"
@@ -175,7 +180,7 @@
             android:textColor="@android:color/black"
             android:textSize="25sp"
             app:layout_constraintTop_toBottomOf="@+id/cl_profile_card_container"
-            tools:ignore="HardcodedText,VisualLintButtonSize"
+            tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize"
             tools:layout_editor_absoluteX="200dp" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -189,10 +194,10 @@
             android:text="Confirm"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textColor="@android:color/black"
+            android:textColor="#4DB6AC"
             android:textSize="25sp"
             app:layout_constraintTop_toBottomOf="@+id/cl_profile_card_container"
-            tools:ignore="HardcodedText,VisualLintButtonSize"
+            tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize"
             tools:layout_editor_absoluteX="78dp" />
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -202,6 +207,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/img"
             tools:layout_editor_absoluteX="311dp"
-            tools:layout_editor_absoluteY="68dp" />
+            tools:layout_editor_absoluteY="68dp"
+            tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

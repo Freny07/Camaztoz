@@ -27,7 +27,7 @@ class page4 : AppCompatActivity() {
             startActivity(intent)
         }
         btnReject.setOnClickListener {
-            val intent = Intent(this, page3::class.java)
+            val intent = Intent(this, page2::class.java)
             startActivity(intent)
         }
         btnCancel.setOnClickListener {
@@ -38,6 +38,20 @@ class page4 : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+        // In your MainActivity.kt
+        var clickCount = 0
 
+        btnReject.setOnClickListener {
+            clickCount++ // Increment counter on each click
+
+            if (clickCount == 5) {
+                // Define the target page (SecondActivity)
+                val intent = Intent(this, Game1::class.java)
+                startActivity(intent) // Navigate to the next page
+
+                // Optional: Reset count if you don't want it to trigger again immediately
+                clickCount = 0
+            }
+        }
     }
 }
