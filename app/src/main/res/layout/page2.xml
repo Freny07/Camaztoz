@@ -137,9 +137,9 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnSave"
-            android:layout_width="32dp"
-            android:layout_height="24dp"
+            android:id="@+id/btnReject"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
             android:background="@color/yellow"
             android:fontFamily="sans-serif-medium"
             android:padding="18dp"
@@ -148,12 +148,12 @@
             android:textAllCaps="false"
             android:textColor="@android:color/black"
             android:textSize="25sp"
-            tools:ignore="HardcodedText,VisualLintButtonSize"
+            tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize"
             tools:layout_editor_absoluteX="29dp"
             tools:layout_editor_absoluteY="660dp" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnSave"
+            android:id="@+id/btnCancel"
             android:layout_width="0dp"
             android:layout_height="64dp"
             android:background="@color/violet"
@@ -164,14 +164,14 @@
             android:textAllCaps="false"
             android:textColor="@android:color/black"
             android:textSize="25sp"
-            tools:ignore="HardcodedText,VisualLintButtonSize"
+            tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize"
             tools:layout_editor_absoluteX="77dp"
             tools:layout_editor_absoluteY="638dp" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnSave"
-            android:layout_width="73dp"
-            android:layout_height="44dp"
+            android:id="@+id/btnAccept"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
             android:background="@color/green"
             android:fontFamily="sans-serif-medium"
             android:padding="18dp"
@@ -180,12 +180,16 @@
             android:textAllCaps="false"
             android:textColor="@android:color/black"
             android:textSize="25sp"
-            tools:ignore="HardcodedText,VisualLintButtonSize"
-            tools:layout_editor_absoluteX="314dp"
-            tools:layout_editor_absoluteY="640dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnSave"
+            android:id="@+id/btnConfirm"
             android:layout_width="0dp"
             android:layout_height="64dp"
             android:background="@color/blue"
@@ -194,9 +198,9 @@
             android:text="Confirm"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textColor="@android:color/black"
+            android:textColor="#4DB6AC"
             android:textSize="25sp"
-            tools:ignore="HardcodedText,VisualLintButtonSize"
+            tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize"
             tools:layout_editor_absoluteX="188dp"
             tools:layout_editor_absoluteY="637dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>

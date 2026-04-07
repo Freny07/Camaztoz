@@ -130,10 +130,46 @@
                 app:layout_constraintTop_toBottomOf="@+id/tv_label_email"
                 tools:ignore="HardcodedText,VisualLintTextFieldSize" />
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAccept"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:background="@color/green"
+                android:fontFamily="sans-serif-medium"
+                android:padding="18dp"
+                android:text="Accept"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize"
+                tools:layout_editor_absoluteY="160dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:background="@color/violet"
+                android:fontFamily="sans-serif-medium"
+                android:padding="18dp"
+                android:text="Cancel"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize"
+                tools:layout_editor_absoluteX="163dp" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnSave"
+            android:id="@+id/btnReject"
             android:layout_width="118dp"
             android:layout_height="65dp"
             android:layout_marginTop="500dp"
@@ -145,50 +181,17 @@
             android:textAllCaps="false"
             android:textColor="@android:color/black"
             android:textSize="25sp"
-            app:layout_constraintBottom_toBottomOf="@+id/btnSave"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnSave"
-            app:layout_constraintTop_toTopOf="@+id/cl_profile_card_container"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
             tools:ignore="HardcodedText,VisualLintButtonSize" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnSave"
-            android:layout_width="0dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="104dp"
-            android:layout_marginTop="468dp"
-            android:background="@color/violet"
-            android:fontFamily="sans-serif-medium"
-            android:padding="18dp"
-            android:text="Cancel"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black"
-            android:textSize="25sp"
-            app:layout_constraintBottom_toBottomOf="@+id/btnSave"
-            app:layout_constraintStart_toEndOf="@+id/btnSave"
-            app:layout_constraintTop_toTopOf="@+id/cl_profile_card_container"
-            tools:ignore="HardcodedText,VisualLintButtonSize" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnSave"
-            android:layout_width="0dp"
-            android:layout_height="64dp"
-            android:layout_marginTop="68dp"
-            android:background="@color/green"
-            android:fontFamily="sans-serif-medium"
-            android:padding="18dp"
-            android:text="Accept"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black"
-            android:textSize="25sp"
-            app:layout_constraintTop_toBottomOf="@+id/cl_profile_card_container"
-            tools:ignore="HardcodedText,VisualLintButtonSize"
-            tools:layout_editor_absoluteX="200dp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnSave"
+            android:id="@+id/btnConfirm"
             android:layout_width="0dp"
             android:layout_height="64dp"
             android:layout_marginTop="4dp"
@@ -198,10 +201,12 @@
             android:text="Confirm"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textColor="@android:color/black"
+            android:textColor="#4DB6AC"
             android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cl_profile_card_container"
-            tools:ignore="HardcodedText,VisualLintButtonSize"
-            tools:layout_editor_absoluteX="78dp" />
+            tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
