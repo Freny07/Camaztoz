@@ -359,14 +359,14 @@ Bug 7:
 - Workaround: Track moves manually
 
 Bug 8:
-- Description: Game result messages may not match the actual outcome
-- Impact: Confusion after game completion
-- Workaround: Verify result from gameplay
+- Description: Game messages do not give out proper information
+- Impact: Confusion in obtaining information regarding game
+- Workaround: Verify displayed messages of gameplay
 
 Bug 9:
-- Description: Turn representation may not clearly alternate between players
+- Description: Wrong display of player outcome
 - Impact: Difficulty tracking turns
-- Workaround: Observe move sequence carefully
+- Workaround: Observe outcome sequence carefully
 
 Bug 10:
 - Description: Some navigation actions do not lead to new screens and may reload the same page
@@ -422,23 +422,45 @@ Bug 19:
 # Design Anti-Patterns Used
 
 Hidden / Low Discoverability Actions → Important actions are not easily visible
+
 Ambiguous CTAs → Multiple buttons appear similar but behave differently
+
 Poor Visual Hierarchy → No clear distinction between primary and secondary actions
+
 Confusing Navigation → Loops and unclear transitions between screens
+
 Fragmented User Flow → Inputs and steps split across multiple pages
+
 Inconsistent Interaction Patterns → Similar actions behave differently
+
 Unclear Semantics → Placeholder text and labels are not easily understandable
+
 Misleading Feedback → Messages and results do not match actual system state
+
 Broken System Feedback → Users cannot rely on visual/game indicators
+
 Cognitive Overload → Multiple steps, unclear inputs, and repeated screens increase effort
+
 Lack of Input Validation → Fields allow unrestricted input
+
 Irrelevant / Redundant Actions → Extra buttons increase confusion
+
 Poor Layout Alignment → Elements are rotated or not properly structured
+
 Overlapping Components → UI elements interfere with each other
+
+Varied languages displaying misleading information
+
 Low Readability Design → Background and colors reduce clarity
+
 Lack of Structured Layout → No consistent alignment or grid system
+
 Poor Touch Target Design → Buttons are too close to each other
+
 Lack of System Feedback → Actions do not clearly confirm results
+
 Loop / Dead-End Navigation → Actions do not lead to new states
+
 Inconsistent Initial State → Game does not start predictably
+
 Multiple Competing CTAs → Several actions are presented together without clear priority
