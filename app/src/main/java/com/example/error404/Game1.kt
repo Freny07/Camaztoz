@@ -16,6 +16,7 @@ class Game1 : AppCompatActivity() {
 
         playOfflineButton.setOnClickListener {
             val intent = Intent(this, Game1::class.java)
+            startActivity(intent)
         }
 
     }

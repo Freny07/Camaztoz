@@ -24,15 +24,19 @@ class page4 : AppCompatActivity() {
 
         btnConfirm.setOnClickListener {
             val intent = Intent(this, page3::class.java)
+            startActivity(intent)
         }
         btnReject.setOnClickListener {
             val intent = Intent(this, page3::class.java)
+            startActivity(intent)
         }
         btnCancel.setOnClickListener {
             val intent = Intent(this, page4::class.java)
+            startActivity(intent)
         }
         btnAccept.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
     }
