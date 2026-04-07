@@ -82,7 +82,7 @@
                 android:background="@drawable/bg"
                 android:hint="sonot krus re"
                 android:inputType="phone"
-                android:rotation=""
+                android:rotation="5678"
                 android:paddingHorizontal="16dp"
                 android:textColor="@color/red"
                 android:textColorHint="@color/black"
